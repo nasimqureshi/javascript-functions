@@ -25,15 +25,25 @@
     <input type="text" name="" id="res" readonly="" />
 
     
-
-   
 </body>
 <script type="text/javascript">
     function cal(){
         var opr1 = document.getElementById('first').value;
         var opr1 = document.getElementById('second').value;
         var ope = document.getElementById('ope').value;
-        alert(ope)
+        if(ope == '+') {
+            var res = parseInt(opr1) + parseInt(opr2);
+        }
+         if(ope == '-') {
+            var res = parseInt(opr1) - parseInt(opr2);
+         }
+        if(ope == '*') {
+             var res = parseInt(opr1) * parseInt(opr2);
+         }
+        if(ope == '/') {
+             var res = parseInt(opr1) / parseInt(opr2);
+        }
+        alert(res);
     }
 </script> 
 </html>
