@@ -11,6 +11,11 @@
     <button onclick="getDate()">Date</button>
     <button onclick="year()">Year</button>
     <button onclick="month()">Month</button>
+    <button onclick="hour()">Hours</button>
+    <button onclick="minute()">Minutes</button>
+    <button onclick="toDate()">Date</button>
+    <button onclick="time()">Time</button>
+    <button onclick="second()">Second</button>
 </body>
 <script>
     var date = new Date();
@@ -23,8 +28,25 @@
         document.getElementById('res').innerText = date.getFullYear();
     }
     function month(){
-        var month = ['january', 'February','March', '']
         document.getElementById('res').innerText = date.getMonth();
     }
+    function hour(){
+        document.getElementById('res').innerText = date.getHours();
+    }
+    function minute(){
+        document.getElementById('res').innerText = date.getMinutes();
+    }
+    function toDate(){
+        document.getElementById('res').innerText = date.getDate();
+    }
+    function time(){
+        document.getElementById('res').innerText = date.getTime();
+    }
+    function second(){
+        document.getElementById('res').innerText = date.getSeconds();
+    }
+
+   
+
 </script>
 </html>
