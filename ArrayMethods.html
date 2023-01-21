@@ -10,6 +10,7 @@
     <button onclick="push()">Push</button>
     <button onclick="slice()">Slice</button>
     <button onclick="reverse()">Reverse</button>
+    <button onclick="shift()">Shift</button>
 </head>
 <body>
     
@@ -38,6 +39,10 @@
     }
     function reverse(){
         var x = demo.reverse(1);
+        document.getElementById('res').innerText = x;
+    }
+    function shift(){
+        var x = demo.shift(1);
         document.getElementById('res').innerText = x;
     }
 
