@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <h1 id="res"></h1>
+    <button onclick="pop()">Pop</button>
+    <button onclick="push()">Push</button>
+</head>
+<body>
+    
+</body>
+<script>
+    var fruits = ["Mango", "Apple","Pineable", "Banana"];
+     var vagitables = ["potato","Ladyfinger", "Ginger"];
+    // var shop = fruits.concat(vagitables);
+    // // var flag = fruits.valueOf();
+    // var index = shop.indexOf("Apple");
+    // document.write("<h1>"+ index + "</h1>");
+    var demo = fruits;
+    document.getElementById('res').innerText = demo;
+    function pop(){
+        demo.pop();
+        document.getElementById('res').innerText = demo;
+    }
+    function push() {
+        demo.push("orange");
+        document.getElementById('res').innerText = demo;
+    }
+
+    
+
+</script>
+</html>
