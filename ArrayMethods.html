@@ -9,6 +9,7 @@
     <button onclick="pop()">Pop</button>
     <button onclick="push()">Push</button>
     <button onclick="slice()">Slice</button>
+    <button onclick="reverse()">Reverse</button>
 </head>
 <body>
     
@@ -32,7 +33,11 @@
         document.getElementById('res').innerText = demo;
     }
     function slice(){
-        var x = demo.slice(3);
+        var x = demo.slice(1);
+        document.getElementById('res').innerText = x;
+    }
+    function reverse(){
+        var x = demo.reverse(1);
         document.getElementById('res').innerText = x;
     }
 
