@@ -8,6 +8,7 @@
     <h1 id="res"></h1>
     <button onclick="pop()">Pop</button>
     <button onclick="push()">Push</button>
+    <button onclick="slice()">Slice</button>
 </head>
 <body>
     
@@ -26,9 +27,13 @@
         document.getElementById('res').innerText = demo;
     }
     function push() {
-        var X = prompt("Please enter a fruit","");
-        demo.push("X");
+        var x = prompt("Please enter a fruit","");
+        demo.push(x);
         document.getElementById('res').innerText = demo;
+    }
+    function slice(){
+        var x = demo.slice(3);
+        document.getElementById('res').innerText = x;
     }
 
     
