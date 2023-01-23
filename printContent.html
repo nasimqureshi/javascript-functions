@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Content</title>
+</head>
+<body id="body">
+    <center>
+        <div>
+            <img src="WsCube-Tech-Logo.png" width="500px" />
+        </div>
+        <p id="data">
+            <h1>Printable Data</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo temporibus accusamus.
+            Debitis suscipit quidem natus, facilis commodi nesciunt dolore animi voluptas laborum sapiente 
+            quia doloribus velit harum quae est, deserunt quos rem ut autem exercitationem sint dolorum,
+            incidunt in. Temporibus voluptate voluptatum quo ipsam officia veniam sint! Ratione eligendi aut 
+            architecto praesentium fugit, exercitationem omnis! Officia itaque ex ipsa assumenda tenetur
+            in mollitia hic ab id illo nihil sequi excepturi recusandae reprehenderit quia dolor accusantium 
+            ipsam placeat, corporis non. Enim accusamus, voluptas aliquam explicabo sint cupiditate excepturi, 
+            harum atque sit similique blanditiis. Minima iusto culpa itaque a aliquid, veniam temporibus tempore 
+            facere ab, voluptate aspernatur reiciendis amet dolore magnam ratione id et labore, officia esse 
+            architecto corrupti nesciunt accusantium! Maiores error itaque delectus qui id autem alias expedita 
+            quis ea quia. Asperiores explicabo, maxime voluptas laudantium ea facere eum accusantium, corrupti 
+            aut ratione dignissimos cumque. Dolor pariatur sint commodi dolorem eius. Vel ab earum sapiente quos 
+            porro maiores enim, asperiores, deserunt animi pariatur cumque autem esse provident numquam possimus
+            necessitatibus minus voluptatum. Vel ex nesciunt mollitia quia perspiciatis reprehenderit ea,
+            facilis id temporibus itaque cum, aut rerum eveniet quaerat quo! Rem alias quis atque maiores.
+            Veritatis corporis vel debitis dolores soluta sit quae corrupti illo obcaecati itaque eum maiores
+            vero doloremque dolorum officiis, impedit iste assumenda porro exercitationem numquam molestias 
+            mollitia, dolore beatae dicta. Natus aut dignissimos voluptate animi! Maiores esse tenetur sed 
+            cumque labore ea voluptate consectetur doloribus, aliquam modi perspiciatis numquam voluptatum
+            autem dignissimos error debitis veniam quod, ab harum sint ratione. Ut magnam blanditiis impedit,
+            tempore cupiditate iure modi sit temporibus fugit consequatur dolorem, adipisci nemo qui in incidunt
+            quo eligendi nihil ea! Recusandae similique nihil temporibus rerum alias suscipit dolore veritatis
+            facilis soluta corrupti deleniti iusto, quod deserunt nemo nobis asperiores architecto consequuntur
+            natus odit.
+        </p>
+    </center>
+    
+</body>
+<script>
+    function printPage(){
+        var body = document.getElementById('body').innerHTML;
+        var data = document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML = data;
+        window.print();
+        document.getElementById('body').innerHTML = body;
+        
+        
+
+
+        
+    }
+</script>
+</html>
